@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    /* font-family: Arial, sans-serif; */
+}
+#nav{
+    height: 7vh;
+    width: 100vw;
+    /* background-color: greenyellow; */
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw;
+}
+#nav h3{
+    font-size: 3.5vh;
+    font-weight: 400;
+    font-family: gilroy;
+}
+ #nav button{
+    padding: 1vh 1vw;
+    border-radius:  50vh;
+    background-color: black;
+    /* border: 2px solid black; */
+    color: aliceblue;
+    
+    
+
+}
+#main{
+    position: relative;
+    overflow: hidden;
+
+}
+#page{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(247, 241, 241);
+    
+
+}
+
+
+
+canvas {
+    position: relative;
+    z-index: 9;
+    height: 100vh;
+    width: 100vw;
+
+}
+#loop{
+    display: flex;
+    position: absolute;
+    top: 30%;
+    height: 25vh;
+    width: 100vw;
+    /* background-color: blueviolet; */
+    font-size: 100px;
+    white-space: nowrap;
+    font-family: gilroy;
+
+}
+#loop h1{
+    font-weight: 400;
+    animation : anime 22s linear infinite;
+
+}
+#loop h1 span{
+    -webkit-text-stroke: 1.2px black;
+    color: transparent;
+    font-weight: 500;
+}
+@keyframes anime{
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
+}
+#page-mid{
+    height: 10vh;
+    width: 100vw;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 55%;
+    position: absolute;
+}
+#page-mid h3{ 
+    padding: 4.5vw;
+    font-family: gilroy;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.8vh;
+    color: grey;
+
+}
+#page1{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    background-color: rgb(247, 241, 241);
+
+}
+#page1 #right-text{
+ position: absolute;
+top: 35vh;
+left: 9vw;
+/* background-color: rgb(255, 0, 47); */
+}
+#page1 #right-text h5{
+    font-weight: 400;
+    color: gray;
+    text-transform: uppercase;
+}
+#page1 #right-text h2{
+    font-weight: 600;
+    line-height:6.5vh;
+    color:black;
+    font-size: 4vh;
+    text-transform: uppercase;
+    font-family: gilroy;
+}
+#page1 #left-text{
+    position: absolute;
+    top: 55vh;
+    right: 9vw;
+    /* background-color: rgb(45, 12, 196); */
+}
+#page1 #left-text h5{
+    font-weight: 400;
+    color: gray;
+    text-transform: uppercase;
+    text-align: end;
+
+}
+#page1 #left-text h2{
+    font-weight: 600;
+    line-height:6.5vh;
+    color:black;
+    font-size: 4vh;
+    text-transform: uppercase;
+    font-family: gilroy;
+
+}
+#page2{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position:relative;
+    background-color: rgb(247, 241, 241);
+}
+#page2 #text1{
+position: absolute;
+top: 35vh;
+left: 9vw;
+}
+#page2 #text1 h5{
+    font-weight: 400;
+    color: gray;
+    text-transform: uppercase;
+}
+#page2 #text1 h2{
+    font-weight: 600;
+    line-height:6.5vh;
+    color:black;
+    font-size: 4vh;
+    text-transform: uppercase;
+    font-family: gilroy;
+
+}
+#page2 #text2{
+    position: absolute;
+    top: 60vh;
+    right: 3vw;
+    }
+ #page2 #text2 h5{
+        font-weight: 400;
+    color: gray;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+#page2 #text2 h4{
+    font-weight: 400;
+    color: gray;
+    text-transform: uppercase;
+    line-height: 1.2;
+    padding-top: 2vh;
+    text-align: end;
+}
+#page3{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    background-color: rgb(247, 241, 241);
+}
+#page3 #part1{
+    position: absolute;
+    top: 30vh;
+    left: 6vw;
+}
+#page3 #part1 h5{
+    font-weight: 400;
+    color: gray;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+#page3 #part1 h4{
+    font-weight: 400;
+    color: gray;
+    text-transform: uppercase;
+    line-height: 1.2;
+    padding-top: 2vh;
+    text-align: end
+
+}
+#page3 #part2{
+    position: absolute;
+    top: 40vh;
+    left: 70vw;
+}
+#page3 #part2 h5{
+    font-weight: 400;
+    color: gray;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+#page3 #part2 h2{
+    font-weight: 600;
+    color: black;
+    font-size: 4vh;
+    text-transform: uppercase;
+    font-family: gilroy;
+}
+
+
